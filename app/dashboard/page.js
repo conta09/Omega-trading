@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Layout from '../components/Layout';
-
+import TransactionHistory from '../components/TransactionHistory';
 const Home = () => {
   const [content, setContent] = useState('home');
 
@@ -12,7 +12,7 @@ const Home = () => {
       case 'wallet':
         return <p>Main content for Wallet</p>;
       case 'transactionHistory':
-        return <p>Main content for Transaction History</p>;
+        return <TransactionHistory />;
       case 'referrals':
         return <p>Main content for Referrals</p>;
       default:
