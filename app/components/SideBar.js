@@ -24,13 +24,13 @@ const Sidebar = ({ setContent }) => {
       </div>
 
 
-      <div className="flex-grow mx-auto">
-        <button onClick={() => setContent('home')} className="flex items-center px-4 py-3 hover:bg-[#242424] w-64 text-left rounded-lg">
+      <div className="flex-grow mx-auto text-[0.9rem] font-semibold">
+        <button onClick={() => setContent('home')} className="  flex items-center px-4 py-3 hover:bg-[#242424] w-64 text-left rounded-lg">
           <GrHomeRounded className="mx-5" />
           Home
         </button>
         <button onClick={() => setContent('wallet')} className="flex items-center px-4 py-3 hover:bg-[#242424] w-64 text-left rounded-lg">
-        <IoWalletOutline className="mx-5 text-xl" />
+        <IoWalletOutline className="mx-5 text-lg" />
           Wallet
         </button>
         <button onClick={() => setContent('transactionHistory')} className="flex items-center px-4 py-3 hover:bg-[#242424] w-64 text-left rounded-lg">

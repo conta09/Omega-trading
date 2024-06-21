@@ -4,11 +4,11 @@ import { Container } from '@mui/material';
 
 // Sample data
 const transactions = [
-  { id: 1, date: '2023-06-01', type: 'deposit', amount: 500, description: 'Saving' },
-  { id: 2, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'lending' },
-  { id: 3, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'shopping' },
+  { id: 1, date: '2023-06-01', type: 'deposit', amount: 500, description: 'deposit money' },
+  { id: 2, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'withdraw money' },
+  { id: 3, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'withdraw money' },
   { id: 4, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'Grocery shopping' },
-  { id: 5, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'Grocery shopping' },
+  { id: 5, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'withdraw money' },
   { id: 6, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'Grocery shopping' },
   { id: 7, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'Grocery shopping' },
   { id: 8, date: '2023-06-02', type: 'withdraw', amount: 200, description: 'Grocery shopping' },
@@ -55,13 +55,12 @@ const TransactionHistory = () => {
             color: 'black',
           },
           '& .MuiDataGrid-row': {
-            backgroundColor: '#000',
           },
           '& .MuiDataGrid-row:nth-of-type(even)': {
             backgroundColor: '#111',
           },
           '& .MuiDataGrid-footerContainer': {
-            backgroundColor: '#333',
+            backgroundColor: '#242424',
             color: '#fff',
           },
         }}
