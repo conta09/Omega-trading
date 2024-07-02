@@ -21,9 +21,9 @@ const ReferralLink = ({ userId }) => {
   };
 
   return (
-    <div className=" p-4 max-w-md mx-auto rounded-xl shadow-md space-y-4">
+    <div className=" p-4 max-w-md ml-4 rounded-xl shadow-md space-y-4">
       <h2 className="text-xl  font-bold ">Referral Program</h2>
-      <p className='w-[16rem]  text-[0.8rem]'>Refer friends and earn rewards for each successful referral made</p>
+      <p className='w-[16rem]  py-3 text-[0.9rem]'>Refer friends and earn rewards for each successful referral made</p>
       <button
         onClick={generateReferralLink}
         className="bg-white  text-black font-bold py-2 px-7 rounded-lg"

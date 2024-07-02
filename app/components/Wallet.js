@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 
-const Wallet = () => {
+const Wallet = ({ balance, updateBalance }) => {
   const [action, setAction] = useState(null);
   const [amount, setAmount] = useState('');
 
@@ -17,8 +17,8 @@ const Wallet = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (action && amount) {
+      updateBalance(amount, action);
       console.log(`${action} amount: $${amount}`);
-      // Handle the deposit or withdraw logic here
     }
     setAction(null);
     setAmount('');
@@ -28,7 +28,7 @@ const Wallet = () => {
     <div className="p-6 max-w-sm rounded-xl shadow-md space-y-4 text-white">
       <div>
         <h2 className="text-xl font-semibold">Wallet</h2>
-       
+        <p>Available Balance: ${balance}</p> {/* Display the current balance */}
       </div>
       <div className="flex space-x-4">
         <button
@@ -61,7 +61,7 @@ const Wallet = () => {
           </div>
           <button
             type="submit"
-            className="w-full hover:bg-white  text-white hover:text-black font-semibold text-[1rem] py-3 px-4 rounded bg-[#242424]"
+            className="w-full hover:bg-white text-white hover:text-black font-semibold text-[1rem] py-3 px-4 rounded bg-[#242424]"
           >
             Submit
           </button>

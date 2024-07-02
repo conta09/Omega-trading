@@ -1,11 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 const SignUp = () => {
   return (
     <div>
     <div className='flex justify-between py-4 mx-10 my-3'>
-        <h1 className='font-semibold text-[1.5rem] mx-3'>LOGO</h1>
-        <div className='mr-4 flex gap-4 '>
+    <Image
+                    src="/omega-logo.png"
+                    alt="logo"
+                    width={120}
+                    height={120}
+                />        <div className='mr-4 flex gap-4 '>
         <Link href="/login">
           <button className='text-white font-medium text-[0.8rem] py-2 px-6 rounded bg-[#2E2E2E]'>Login</button>
         </Link>
@@ -40,13 +45,11 @@ const SignUp = () => {
                 type="submit"
                 className="w-full px-4 py-3 font-medium text-[0.9rem] text-black bg-white rounded-md hover:bg-[#e4e4e4] focus:outline-none focus:ring focus:ring-blue-300"
               >
-                Login
+                Signup with Google
               </button>
             </div>
           </form>
-          <p className="mt-4 text-sm text-center text-white">
-            <a href="#" className="font-medium hover:underline">Forgot your password?</a>
-          </p>
+        
           <hr></hr>
         </div>
       </div>
