@@ -9,6 +9,12 @@ const Home = () => {
   const [content, setContent] = useState('home');
   const [balance, setBalance] = useState(0); // Add balance state
 
+
+
+
+
+
+  
   const renderContent = () => {
     switch (content) {
       case 'home':
@@ -23,7 +29,6 @@ const Home = () => {
         return <HomePage />;
     }
   };
-
   const handleDepositClick = () => {
     setContent('wallet');
   };

@@ -42,6 +42,12 @@ const Sidebar = ({ setContent }) => {
                     <FaLink className="mx-5" />
                     Referrals
                 </button>
+                <button onClick={() => setContent('referrals')} className="flex items-center px-4 py-3 hover:bg-[#242424] w-64 text-left rounded-lg">
+                    <FaLink className="mx-5" />
+                    Referrals
+                </button>
+
+                
             </div>
         </div>
     );
